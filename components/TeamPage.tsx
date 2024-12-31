@@ -12,7 +12,7 @@ interface TeamPageProps {
 }
 
 const TeamPage: React.FC<TeamPageProps> = ({ team, teamData, onBack }) => {
-  const { resources, recentReports, memberCount } = teamData;
+  const { resources, memberCount } = teamData;
 
   return (
     <div className="min-h-screen bg-white font-[Raleway]">
@@ -58,29 +58,6 @@ const TeamPage: React.FC<TeamPageProps> = ({ team, teamData, onBack }) => {
             })}
           </div>
         </section>
-
-        {/* Recent Reports Section */}
-        {recentReports && (
-          <section>
-            <h3 className="text-2xl font-bold mb-6">Recent Reports</h3>
-            <div className="space-y-4">
-              {recentReports.map((report) => (
-                <div 
-                  key={report.title}
-                  className="p-6 border rounded-lg hover:border-blue-600 hover:shadow-lg transition-all cursor-pointer"
-                >
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <h4 className="text-lg font-semibold mb-1">{report.title}</h4>
-                      <p className="text-gray-600">By {report.author}</p>
-                    </div>
-                    <span className="text-sm text-gray-500">{report.date}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
       </main>
     </div>
   );
