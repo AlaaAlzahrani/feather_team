@@ -2,11 +2,15 @@
 
 import React from 'react';
 import { ArrowRight, BookOpen, Users, Video } from 'lucide-react';
-import { teams } from '@/data/teams';
+import { Team } from '@/types/teams';
 import '@fontsource/raleway';
-import Link from 'next/link';
 
-export default function LandingPage() {
+interface LandingPageProps {
+  teams: Team[];
+  onTeamSelect: (teamId: string) => void;
+}
+
+const LandingPage: React.FC<LandingPageProps> = ({ teams, onTeamSelect }) => {
   return (
     <div className="min-h-screen bg-white font-[Raleway]">
       {/* Header */}
@@ -52,10 +56,10 @@ export default function LandingPage() {
           <h3 className="text-2xl font-bold mb-6">Select Your Team</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {teams.map(team => (
-              <Link
+              <button
                 key={team.id}
-                href={`/${team.id}`}
                 className="p-6 border rounded-lg text-left hover:border-blue-600 hover:shadow-lg transition-all group"
+                onClick={() => onTeamSelect(team.id)}
               >
                 <div className="flex justify-between items-center">
                   <div>
@@ -64,11 +68,13 @@ export default function LandingPage() {
                   </div>
                   <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </Link>
+              </button>
             ))}
           </div>
         </section>
       </main>
     </div>
   );
-}
+};
+
+export default LandingPage;
