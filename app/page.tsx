@@ -43,7 +43,7 @@ export default function LandingPage() {
           <div className="p-6 border rounded-lg">
             <Users className="w-8 h-8 text-blue-600 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Team Specific</h3>
-            <p className="text-gray-600">Content tailored to your team's needs</p>
+            <p className="text-gray-600">Content tailored to your team&apos;s needs</p>
           </div>
         </div>
 
