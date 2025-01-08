@@ -18,19 +18,22 @@ const modules = [
     title: 'Platform Overview',
     description: 'Learn about the key platforms we use for reporting',
     duration: '3 min',
-    icon: LayoutDashboard
+    icon: LayoutDashboard,
+    href: '/reports/daily/platform-overview'
   },
   {
     title: 'Metrics Guide',
     description: 'Understanding key metrics across platforms',
     duration: '5 min',
-    icon: BarChart2
+    icon: BarChart2,
+    href: '/reports/daily/metrics-guide'
   },
   {
     title: 'Brand-specific Reports',
     description: 'How to create reports for specific brands',
     duration: '7 min',
-    icon: Building2
+    icon: Building2,
+    href: '/reports/daily/brand-reports'
   }
 ];
 
@@ -57,31 +60,34 @@ export const DailyReportSection = () => {
         {modules.map((module, index) => {
           const Icon = module.icon;
           return (
-            <Card 
+            <Link 
               key={index} 
-              className="hover:border-[#F28579] hover:shadow-md transition-all cursor-pointer"
+              href={module.href}
+              className="block"
             >
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#DFF7F6]">
-                      <Icon className="w-6 h-6 text-[#1D3D6F]" />
+              <Card className="hover:border-[#F28579] hover:shadow-md transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#DFF7F6]">
+                        <Icon className="w-6 h-6 text-[#1D3D6F]" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-[#1D3D6F]">{module.title}</h3>
+                        <p className="text-[#1D3D6F]/70 text-sm">{module.description}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-[#1D3D6F]">{module.title}</h3>
-                      <p className="text-[#1D3D6F]/70 text-sm">{module.description}</p>
+                    <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-2 text-[#1D3D6F] bg-[#DFF7F6] px-3 py-1 rounded-full">
+                        <Clock className="w-4 h-4" />
+                        <span className="text-sm">{module.duration}</span>
+                      </div>
+                      <ChevronRight className="w-5 h-5 text-[#F28579]" />
                     </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="flex items-center gap-2 text-[#1D3D6F] bg-[#DFF7F6] px-3 py-1 rounded-full">
-                      <Clock className="w-4 h-4" />
-                      <span className="text-sm">{module.duration}</span>
-                    </div>
-                    <ChevronRight className="w-5 h-5 text-[#F28579]" />
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </Link>
           );
         })}
       </div>
