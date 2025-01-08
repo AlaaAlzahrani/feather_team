@@ -9,25 +9,21 @@ export const teams: Team[] = [
   { 
     id: 'reports',
     name: 'Reports', 
-    topicCount: 7,
     description: 'Access all the tools and guidelines you need to create impactful reports.'
   },
   { 
     id: 'content-writing',
     name: 'Content Writing', 
-    topicCount: 10,
     description: 'Create compelling content with our writing resources.'
   },
   { 
     id: 'photography',
     name: 'Photography', 
-    topicCount: 12,
     description: 'Capture amazing photos with professional techniques.'
   },
   { 
     id: 'design',
     name: 'Design', 
-    topicCount: 8,
     description: 'Design beautiful interfaces with our design system.'
   }
 ];

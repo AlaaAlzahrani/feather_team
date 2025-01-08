@@ -16,7 +16,6 @@ export interface Report {
 export interface Team {
   id: string;
   name: string;
-  topicCount: number;
   description: string;
 }
 

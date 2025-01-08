@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import React from 'react';
 import { ArrowRight, BookOpen, Users, Video } from 'lucide-react';
 import { teams } from '@/data/teams';
@@ -10,59 +12,74 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white font-[Raleway]">
       {/* Header */}
-      <header className="bg-gray-900 text-white">
-        <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold">FEATHER</h1>
-          <button className="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700">
+      <header className="bg-[#1D3D6F] text-white sticky top-0 z-50">
+        <nav className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+          <h1 className="text-2xl font-bold tracking-wider">FEATHER</h1>
+          <button className="bg-[#F28579] px-6 py-2.5 rounded-full text-white hover:bg-opacity-90 transition-all">
             Sign In
           </button>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <main className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Welcome to Our Feather Team</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Get started fast. Access tutorials and essential information all in one place. ✨
+      <main className="max-w-7xl mx-auto px-6">
+        <div className="text-center py-24 md:py-32">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-[#1D3D6F] tracking-tight">
+            Welcome to Feather
+          </h2>
+          <p className="text-[#1D3D6F]/70 text-xl max-w-xl mx-auto mb-8">
+            Access everything you need, all in one place ✨
           </p>
+          <button className="bg-[#F28579] px-8 py-4 rounded-full text-white hover:bg-opacity-90 transition-all text-lg font-semibold">
+            Press Start
+          </button>
         </div>
 
-        {/* Features */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="p-6 border rounded-lg">
-            <Video className="w-8 h-8 text-blue-600 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Video Tutorials</h3>
-            <p className="text-gray-600">Learn at your own pace with detailed video guides</p>
+        {/* Features - Now Vertical */}
+        <div className="space-y-8 mb-24 max-w-3xl mx-auto">
+          <div className="p-12 rounded-2xl bg-[#DFF7F6] hover:shadow-xl transition-all duration-300 text-center">
+            <div className="bg-[#A8E5E2] rounded-full w-24 h-24 flex items-center justify-center mb-8 mx-auto">
+              <Video className="w-12 h-12 text-[#1D3D6F]" />
+            </div>
+            <p className="text-[#1D3D6F]/70 text-lg">
+              Learn at your own pace with our comprehensive video tutorials, designed to guide you through every step of the process
+            </p>
           </div>
-          <div className="p-6 border rounded-lg">
-            <BookOpen className="w-8 h-8 text-blue-600 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Documentation</h3>
-            <p className="text-gray-600">Comprehensive written guides and resources</p>
+          
+          <div className="p-12 rounded-2xl bg-[#DFF7F6] hover:shadow-xl transition-all duration-300 text-center">
+            <div className="bg-[#A8E5E2] rounded-full w-24 h-24 flex items-center justify-center mb-8 mx-auto">
+              <BookOpen className="w-12 h-12 text-[#1D3D6F]" />
+            </div>
+            <p className="text-[#1D3D6F]/70 text-lg">
+              Access our extensive documentation library, featuring clear and concise guides to help you master every aspect
+            </p>
           </div>
-          <div className="p-6 border rounded-lg">
-            <Users className="w-8 h-8 text-blue-600 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Team Specific</h3>
-            <p className="text-gray-600">Content tailored to your team&apos;s needs</p>
+          
+          <div className="p-12 rounded-2xl bg-[#DFF7F6] hover:shadow-xl transition-all duration-300 text-center">
+            <div className="bg-[#A8E5E2] rounded-full w-24 h-24 flex items-center justify-center mb-8 mx-auto">
+              <Users className="w-12 h-12 text-[#1D3D6F]" />
+            </div>
+            <p className="text-[#1D3D6F]/70 text-lg">
+              Experience personalized content tailored specifically to your team's needs and objectives
+            </p>
           </div>
         </div>
 
         {/* Teams Section */}
-        <section>
-          <h3 className="text-2xl font-bold mb-6">Select Your Team</h3>
-          <div className="grid md:grid-cols-2 gap-4">
+        <section className="pb-24">
+          <h3 className="text-3xl font-bold mb-8 text-[#1D3D6F]">Select Your Team</h3>
+          <div className="grid md:grid-cols-2 gap-6">
             {teams.map(team => (
               <Link
                 key={team.id}
                 href={`/${team.id}`}
-                className="p-6 border rounded-lg text-left hover:border-blue-600 hover:shadow-lg transition-all group"
+                className="p-8 rounded-2xl bg-white border-2 border-transparent hover:border-[#F28579] hover:shadow-xl transition-all group"
               >
                 <div className="flex justify-between items-center">
                   <div>
-                    <h4 className="text-lg font-semibold mb-1">{team.name}</h4>
-                    <p className="text-gray-600">{team.topicCount} topics</p>
+                    <h4 className="text-xl font-semibold mb-2 text-[#1D3D6F]">{team.name}</h4>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-6 h-6 text-[#F28579] group-hover:translate-x-2 transition-transform duration-300" />
                 </div>
               </Link>
             ))}
@@ -72,3 +89,4 @@ export default function LandingPage() {
     </div>
   );
 }
+
