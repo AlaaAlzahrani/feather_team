@@ -3,6 +3,7 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Users, Video, Sparkles, Target } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const LandingPage = () => {
   const features = [
@@ -59,7 +60,7 @@ const LandingPage = () => {
             </button>
           </div>
           <div className="bg-[#DFF7F6] p-8 rounded-3xl">
-            <img 
+            <Image 
               src="/landing-page/business-teamwork-sketch.avif"
               alt="Team collaboration"
               width={400}
