@@ -58,13 +58,13 @@ const LandingPage = () => {
               Get Started
             </button>
           </div>
-          <div className="bg-[#DFF7F6] rounded-1xl p-8">
+          <div className="bg-[#DFF7F6] p-8 rounded-3xl">
             <img 
               src="/landing-page/business-teamwork-sketch.avif"
               alt="Team collaboration"
-              width={150}
-              height={200}
-              className="w-full h-full object-cover rounded-sm"
+              width={400}
+              height={600}
+              className="w-full h-full rounded-3xl"
             />
           </div>
         </div>
