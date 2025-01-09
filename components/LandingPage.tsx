@@ -64,7 +64,6 @@ const LandingPage: React.FC<LandingPageProps> = ({ teams, onTeamSelect }) => {
                 <div className="flex justify-between items-center">
                   <div>
                     <h4 className="text-lg font-semibold mb-1">{team.name}</h4>
-                    <p className="text-gray-600">{team.topicCount} topics</p>
                   </div>
                   <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
