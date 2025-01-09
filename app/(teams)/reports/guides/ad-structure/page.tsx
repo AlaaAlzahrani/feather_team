@@ -32,7 +32,7 @@ export default function AdStructureGuide() {
             {/* Campaign Level */}
             <div className="w-64 p-4 bg-[#1D3D6F] text-white rounded-lg text-center">
               <Layout className="w-6 h-6 mx-auto mb-2" />
-              Campaign - الحملة
+              Campaign 
             </div>
             
             <div className="h-8 w-px bg-[#1D3D6F]" />
@@ -42,17 +42,17 @@ export default function AdStructureGuide() {
               <div className="flex flex-col items-center">
                 <div className="w-48 p-3 bg-[#A8E5E2] text-[#1D3D6F] rounded-lg text-center mb-4">
                   <Layers className="w-5 h-5 mx-auto mb-2" />
-                  Ad Set 1 - مجموعة إعلانات ١
+                  Ad Set 1 
                 </div>
                 <div className="h-8 w-px bg-[#1D3D6F] mb-4" />
                 <div className="flex gap-2">
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 1 - إعلان ١
+                    Ad 1 
                   </div>
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 2 - إعلان ٢
+                    Ad 2 
                   </div>
                 </div>
               </div>
@@ -60,17 +60,17 @@ export default function AdStructureGuide() {
               <div className="flex flex-col items-center">
                 <div className="w-48 p-3 bg-[#A8E5E2] text-[#1D3D6F] rounded-lg text-center mb-4">
                   <Layers className="w-5 h-5 mx-auto mb-2" />
-                  Ad Set 2 - مجموعة إعلانات ٢
+                  Ad Set 2 
                 </div>
                 <div className="h-8 w-px bg-[#1D3D6F] mb-4" />
                 <div className="flex gap-2">
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 3 - إعلان ٣
+                    Ad 3 
                   </div>
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 4 - إعلان ٤
+                    Ad 4 
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function AdStructureGuide() {
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: &quotتخفيضات الشتاء ٢٠٢٤&quot - حملة تجمع كل إعلانات عروض الشتاء
+                    مثال: "تخفيضات الشتاء2024" - حملة تجمع كل إعلانات عروض الشتاء
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function AdStructureGuide() {
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: &quotمنطقة الإمارات&quot - مجموعة إعلانات مخصصة لعملاء الإمارات
+                    مثال: "منطقة الإمارات" - مجموعة إعلانات مخصصة لعملاء الإمارات
                   </p>
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function AdStructureGuide() {
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: &quotستوري تخفيضات الشتاء &quot - إعلان ستوري محدد بتصميمه الخاص
+                    مثال: "ستوري تخفيضات الشتاء 1" - إعلان ستوري محدد بتصميمه الخاص
                   </p>
                 </div>
               </div>
