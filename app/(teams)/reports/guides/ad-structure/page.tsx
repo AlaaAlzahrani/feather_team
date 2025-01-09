@@ -98,7 +98,7 @@ export default function AdStructureGuide() {
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: "تخفيضات الشتاء ٢٠٢٤" - حملة تجمع كل إعلانات عروض الشتاء
+                    مثال: &quotتخفيضات الشتاء ٢٠٢٤&quot - حملة تجمع كل إعلانات عروض الشتاء
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function AdStructureGuide() {
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: "منطقة الإمارات" - مجموعة إعلانات مخصصة لعملاء الإمارات
+                    مثال: &quotمنطقة الإمارات&quot - مجموعة إعلانات مخصصة لعملاء الإمارات
                   </p>
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function AdStructureGuide() {
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: "ستوري تخفيضات الشتاء ١" - إعلان ستوري محدد بتصميمه الخاص
+                    مثال: &quotستوري تخفيضات الشتاء &quot - إعلان ستوري محدد بتصميمه الخاص
                   </p>
                 </div>
               </div>
