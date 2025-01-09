@@ -174,7 +174,7 @@ function CongratulationsPage({ answers }: CongratulationsPageProps) {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Hi {name}, the {role}. Welcome onboard!
         </h2>
-        <p className="text-xl text-gray-700 mb-8">You've completed your first step in the onboarding process.</p>
+        <p className="text-xl text-gray-700 mb-8">You&apos;ve completed your first step in the onboarding process.</p>
         <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
           Continue to Main page! 💛
         </Button>
