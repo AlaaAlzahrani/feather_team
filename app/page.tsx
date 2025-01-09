@@ -53,7 +53,7 @@ const LandingPage = () => {
               Welcome to Your Journey at Feather
             </h2>
             <p className="text-xl text-[#1D3D6F]/70">
-              Start your onboarding journey with our comprehensive guides and resources. We're here to help you succeed! ✨
+              Start your onboarding journey with our comprehensive guides and resources. We&apos;re here to help you succeed! ✨
             </p>
             <button className="bg-[#F28579] px-8 py-4 rounded-full text-white hover:bg-opacity-90 transition-all text-lg font-semibold">
               Get Started
@@ -117,7 +117,7 @@ const LandingPage = () => {
           </p>
           <button className="bg-[#F28579] px-6 py-4 rounded-full text-white hover:bg-opacity-90 transition-all text-lg font-semibold group">
             <span className="inline-flex items-center">
-              Let's Grow Together
+              Let&apos;s Grow Together
               <svg 
                 className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" 
                 fill="none" 

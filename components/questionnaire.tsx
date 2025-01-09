@@ -17,20 +17,20 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    title: "What's your name?",
+    title: "What&apos;s your name?",
     subtitle: "Please enter your full name",
     type: 'text'
   },
   {
     id: 2,
-    title: "What's your team?",
+    title: "What&apos;s your team?",
     subtitle: "Select your primary team",
     type: 'radio',
     options: ['Reports', 'Design', 'Photoshoots', 'Content Writing']
   },
   {
     id: 3,
-    title: "What's your Feather email?",
+    title: "What&apos;s your Feather email?",
     subtitle: "Please enter your Feather email",
     type: 'text'}
 ]
