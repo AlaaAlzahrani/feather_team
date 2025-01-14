@@ -1,21 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, FileText, ChevronRight, ScrollText, Gauge, Laptop, AlertCircle } from 'lucide-react';
+import { ArrowLeft, ChevronRight, SparkleIcon, Laptop, ChevronLeft } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const ProcessPage = () => {
   const paths = [
     {
-      title: "طريقة تجهيز التقارير اليومية",
-      icon: FileText,
-      description: "تعرف على طريقة تحديث الأرقام اليومية من كل المنصات ",
+      title: "شروحات أساسية",
+      icon: SparkleIcon,
+      description: "أعرفي الأساسيات الهامة لإعداد التقرير اليومي ",
       path: "/reports/tasks/daily/process/prepare-reports"
     },
     {
-      title: "طريقة تجهيز ملف التقرير",
-      icon: ScrollText,
-      description: "تعلم كيف تنسق ملف التقرير اليومي ",
-      path: "/reports/tasks/daily/process/prepare-sheet"
+      title: "شروحات إضافية",
+      icon: SparkleIcon,
+      description:"أعرفي تفاصيل إضافية عن إعداد التقرير اليومي",
+      path: "/reports/tasks/daily/process/prepare-additional"
     }
   ];
 
@@ -24,26 +24,17 @@ const ProcessPage = () => {
       {/* Navigation Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-[#1D3D6F]/70 mb-6">
         <Link href="/reports" className="hover:text-[#1D3D6F]">التقارير</Link>
-        <ChevronRight className="w-4 h-4" />
+        <ChevronLeft className="w-4 h-4" />
         <Link href="/reports/tasks" className="hover:text-[#1D3D6F]">المهام</Link>
-        <ChevronRight className="w-4 h-4" />
+        <ChevronLeft className="w-4 h-4" />
         <Link href="/reports/tasks/daily" className="hover:text-[#1D3D6F]">اليومية</Link>
-        <ChevronRight className="w-4 h-4" />
-        <span className="text-[#1D3D6F]">العملية</span>
+        <ChevronLeft className="w-4 h-4" />
+        <span className="text-[#1D3D6F]">شروحات</span>
       </div>
 
-      {/* Back Navigation */}
-      <Link
-        href="/reports/tasks/daily"
-        className="flex items-center text-[#F28579] mb-6 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للتقارير اليومية
-      </Link>
-
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">عملية التقارير اليومية</h1>
+      <div className="mb-8 py-6">
+        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">شروحات التقارير اليومية</h1>
         <p className="text-[#1D3D6F]/70">
           يا هلا! 👋 اختر المسار اللي تبي تتعلم فيه عن تجهيز التقارير اليومية أو إعداد ملف التقرير
         </p>
@@ -64,7 +55,7 @@ const ProcessPage = () => {
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-semibold text-[#1D3D6F]">{path.title}</h3>
-                        <ChevronRight className="w-5 h-5 text-[#F28579]" />
+                        <ChevronLeft className="w-5 h-5 text-[#F28579]" />
                       </div>
                       <p className="text-[#1D3D6F]/70 mb-4">{path.description}</p>
                     </div>
@@ -76,23 +67,17 @@ const ProcessPage = () => {
         })}
       </div>
 
-      {/* Quick Links */}
-      <div className="mt-8 p-4 bg-[#DFF7F6] rounded-lg">
-        <div className="flex items-center gap-3">
-          <Laptop className="w-5 h-5 text-[#1D3D6F]" />
-          <div>
-            <h4 className="font-semibold text-[#1D3D6F] mb-1">مصادر مفيدة ✨</h4>
-            <div className="flex gap-4">
-              <Link href="/reports/guides/metrics" className="text-sm text-[#F28579] hover:text-[#1D3D6F] transition-colors">
-                دليل المقاييس
-              </Link>
-              <Link href="/reports/guides/brand-names" className="text-sm text-[#F28579] hover:text-[#1D3D6F] transition-colors">
-                دليل أسماء البراندات
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      {/* Back Navigation */}
+      <Link
+        href="/reports/tasks/daily"
+        className="flex items-center text-[#F28579] py-8 hover:text-[#1D3D6F] transition-colors"
+      >
+        <ArrowLeft className="w-4 h-4 mr-2" />
+        رجوع للتقارير اليومية
+      </Link>
+
+
     </div>
   );
 };

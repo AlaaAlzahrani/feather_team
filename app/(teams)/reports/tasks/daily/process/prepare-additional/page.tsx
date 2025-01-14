@@ -3,22 +3,22 @@ import Link from 'next/link';
 import { ArrowLeft, ChevronLeft, SparkleIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
-const BrandsOverview = () => {
+const AdditionalTutorialsOverview = () => {
   const brands = [
     {
-      name: "Labelle",
-      description: "شروحات التقارير لحملات لابيل",
-      path: "/reports/tasks/daily/process/prepare-reports/brands/labelle"
+      name: "البحث عن المقياس",
+      description: "أعرفي كيف تستخرجين المقياس المختفي في كل منصة",
+      path: "/reports/tasks/daily/process/prepare-additional/custom-metric"
     },
     {
-      name: "Reefi",
-      description: "شروحات التقارير لحملات ريفي",
-      path: "/reports/tasks/daily/process/prepare-reports/brands/reefi"
+      name: "تنسيق التقرير",
+      description: "أعرفي كيف تنسقين صفحة التقرير اليومي",
+      path: "/reports/tasks/daily/process/prepare-additional/sheet"
     }
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-4">
       {/* Navigation Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-[#1D3D6F]/70 mb-6">
         <Link href="/reports" className="hover:text-[#1D3D6F]">التقارير</Link>
@@ -27,25 +27,14 @@ const BrandsOverview = () => {
         <ChevronLeft className="w-4 h-4" />
         <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
         <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process/prepare-reports" className="hover:text-[#1D3D6F]">تجهيز التقارير</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <span className="text-[#1D3D6F]">البراندات</span>
+        <span className="text-[#1D3D6F]">شروحات إضافية</span>
       </div>
 
-      {/* Back Navigation */}
-      <Link
-        href="/reports/tasks/daily/process/prepare-reports"
-        className="flex items-center text-[#F28579] mb-6 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع لتجهيز التقارير
-      </Link>
-
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">تقارير البراندات </h1>
+      <div className="mb-10 py-8">
+        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">شروحات إضافية </h1>
         <p className="text-[#1D3D6F]/70">
-          يا هلا! اختر البراند اللي تبي تشوف طريقة تقاريره. بعض البراندات  لها طريقة خاصة في كل منصة 
+          يا هلا! هنا بتلقين نصائح بتساعدك كثير في إعداد التقرير اليومي 
         </p>
       </div>
 
@@ -76,8 +65,19 @@ const BrandsOverview = () => {
           </Link>
         ))}
       </div>
+
+
+        {/* Back Navigation */}
+        <Link
+        href="/reports/tasks/daily/process/prepare-reports"
+        className="flex items-center text-[#F28579] py-8 hover:text-[#1D3D6F] transition-colors"
+      >
+        <ArrowLeft className="w-4 h-4 mr-2" />
+        رجوع للتقارير اليومية
+      </Link>
+
     </div>
   );
 };
 
-export default BrandsOverview;
+export default AdditionalTutorialsOverview;

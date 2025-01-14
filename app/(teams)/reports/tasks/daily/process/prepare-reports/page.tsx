@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ChevronRight, Layout, Building2, MessageCircle, Camera, Music2, Search, Twitter } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, SparkleIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const PrepareReportsPage = () => {
   const paths = [
     {
       title: "شرح عام للمنصات",
-      icon: Layout,
-      description: "نتعلم كيف نستخرج الأرقام من كل منصة",
+      icon: SparkleIcon,
+      description: "أعرفي كيف تستخرجين الأرقام من كل المنصات",
       preview: [
         "سناب شات",
         "تيك توك",
@@ -20,17 +20,10 @@ const PrepareReportsPage = () => {
     },
     {
       title: "شرح خاص للبراندات",
-      icon: Building2,
-      description: "نتعرف على طريقة التقارير الخاصة لبعض البراندات ",
-      brands: [
-        {
-          name: "Labelle",
-          path: "/reports/tasks/daily/process/prepare-reports/brands/labelle",
-        },
-        {
-          name: "Reefi",
-          path: "/reports/tasks/daily/process/prepare-reports/brands/reefi",
-        }
+      icon: SparkleIcon,
+      description: "أعرفي كيف تستخرجين الأرقام لبعض البراندات ",
+      preview: ["لابيل",
+        "ريفي"
       ],
       path: "/reports/tasks/daily/process/prepare-reports/brands"
     }
@@ -41,26 +34,18 @@ const PrepareReportsPage = () => {
       {/* Navigation Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-[#1D3D6F]/70 mb-6">
         <Link href="/reports" className="hover:text-[#1D3D6F]">التقارير</Link>
-        <ChevronRight className="w-4 h-4" />
+        <ChevronLeft className="w-4 h-4" />
         <Link href="/reports/tasks/daily" className="hover:text-[#1D3D6F]">اليومية</Link>
-        <ChevronRight className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">العملية</Link>
-        <ChevronRight className="w-4 h-4" />
+        <ChevronLeft className="w-4 h-4" />
+        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
+        <ChevronLeft className="w-4 h-4" />
         <span className="text-[#1D3D6F]">تجهيز التقارير</span>
       </div>
 
-      {/* Back Navigation */}
-      <Link
-        href="/reports/tasks/daily/process"
-        className="flex items-center text-[#F28579] mb-6 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للعملية
-      </Link>
 
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">تجهيز التقارير 📊</h1>
+      <div className="mb-8 py-6">
+        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">إعداد التقارير </h1>
         <p className="text-[#1D3D6F]/70">
           يا هلا! اختر نوع الشرح اللي تبيه - إما شرح عام لكل المنصات، أو شرح مخصص للبراندات 👋
         </p>
@@ -85,26 +70,6 @@ const PrepareReportsPage = () => {
                       </div>
                       <p className="text-[#1D3D6F]/70 mb-4">{path.description}</p>
                       
-                      <div className="bg-[#DFF7F6] rounded-lg p-4">
-                        {path.brands ? (
-                          <div className="space-y-4">
-                            {path.brands.map((brand, idx) => (
-                              <div key={idx} className="space-y-2">
-                                <h4 className="text-sm font-semibold text-[#1D3D6F]">{brand.name}</h4>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="grid grid-cols-2 gap-2">
-                            {path.preview.map((item, idx) => (
-                              <div key={idx} className="flex items-center gap-2 text-sm text-[#1D3D6F]/70">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#A8E5E2]" />
-                                {item}
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -113,6 +78,17 @@ const PrepareReportsPage = () => {
           );
         })}
       </div>
+
+
+        {/* Back Navigation */}
+        <Link
+        href="/reports/tasks/daily/process"
+        className="flex items-center text-[#F28579] py-8 hover:text-[#1D3D6F] transition-colors"
+      >
+        <ArrowLeft className="w-4 h-4 mr-2" />
+        رجوع للشروحات 
+        </Link>
+
     </div>
   );
 };

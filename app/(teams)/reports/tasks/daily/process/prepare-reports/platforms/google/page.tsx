@@ -13,7 +13,7 @@ export default function GooglePlatformPage() {
         <ChevronRight className="w-4 h-4" />
         <Link href="/reports/tasks/daily" className="hover:text-[#1D3D6F]">اليومية</Link>
         <ChevronRight className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">العملية</Link>
+        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
         <ChevronRight className="w-4 h-4" />
         <Link href="/reports/tasks/daily/process/prepare-reports" className="hover:text-[#1D3D6F]">تجهيز التقارير</Link>
         <ChevronRight className="w-4 h-4" />
