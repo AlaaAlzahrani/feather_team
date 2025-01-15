@@ -99,7 +99,7 @@ const LabelleBrandOverview = () => {
                   <h3 className="text-lg font-semibold text-[#1D3D6F] text-center transition-opacity group-hover:opacity-100">
                     {platform.name}
                   </h3>
-                  <ChevronLeft className="w-5 h-5 text-[#F28579] mt-2 transition-colors group-hover:opacity-0" />
+                  <ChevronLeft className="w-5 h-5 text-[#000000] mt-2 transition-transform group-hover:translate-x-[-8px]" />
                 </CardContent>
                 <div className="absolute inset-0 bg-[var(--platform-hover-color)] opacity-0 group-hover:opacity-60 transition-opacity">
                   <div className="h-full p-4 flex flex-col items-center justify-center">

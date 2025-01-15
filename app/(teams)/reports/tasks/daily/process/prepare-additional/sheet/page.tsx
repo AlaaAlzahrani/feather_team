@@ -44,24 +44,6 @@ export default function SheetPage() {
         </CardContent>
       </Card>
 
-
-      {/* Tips */}
-      <Card className="mb-8 border-r-4 border-r-[#A8E5E2]">
-        <CardContent className="p-4">
-          <div className="flex items-start gap-3">
-            <AlertCircle className="w-5 h-5 text-[#1D3D6F] mt-1" />
-            <div>
-              <h3 className="font-semibold text-[#1D3D6F] mb-1">نصائح سريعة 💡</h3>
-              <ul className="text-sm text-[#1D3D6F]/70 space-y-2">
-              <li>• ...... </li>
-              <li>• ...... </li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-
       {/* Back Navigation */}
       <Link
         href="/reports/tasks/daily/process/prepare-additional"

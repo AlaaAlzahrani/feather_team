@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ChevronLeft, ChevronRight, SparkleIcon } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, SparkleIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const PrepareReportsPage = () => {
@@ -66,7 +66,7 @@ const PrepareReportsPage = () => {
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-semibold text-[#1D3D6F]">{path.title}</h3>
-                        <ChevronRight className="w-5 h-5 text-[#F28579]" />
+                        <ChevronLeft className="w-5 h-5 text-[#F28579]" />
                       </div>
                       <p className="text-[#1D3D6F]/70 mb-4">{path.description}</p>
                       
