@@ -40,19 +40,9 @@ export default function SheetPage() {
       {/* Video Section */}
       <Card className="mb-8">
         <CardContent className="p-6">
-          <YouTubePlayer videoId="ADD_VIDEO_ID" />
+          <YouTubePlayer videoId="7CeTaJ-StoM" />
         </CardContent>
       </Card>
-
-      {/* Back Navigation */}
-      <Link
-        href="/reports/tasks/daily/process/prepare-additional"
-        className="flex items-center text-[#F28579] py-8 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للشروحات الإضافية
-      </Link>
-
     </div>
   );
 }

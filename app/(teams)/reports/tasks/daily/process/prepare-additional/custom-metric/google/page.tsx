@@ -42,13 +42,11 @@ export default function GoogleCustomPage() {
       {/* Video Section */}
       <Card className="mb-8">
         <CardContent className="p-6">
-          <YouTubePlayer videoId="YOUR_VIDEO_ID" />
+          <YouTubePlayer videoId="DTPM91ZzS6c" />
         </CardContent>
       </Card>
 
-
       {/* Next Platform Navigation */}
-
         <div className="flex justify-between">
         <Link
           href="/reports/tasks/daily/process/prepare-additional/custom-metric/meta"

@@ -39,7 +39,7 @@ const PrepareReportsPage = () => {
         <ChevronLeft className="w-4 h-4" />
         <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
         <ChevronLeft className="w-4 h-4" />
-        <span className="text-[#1D3D6F]">تجهيز التقارير</span>
+        <span className="text-[#1D3D6F]">إعداد التقارير</span>
       </div>
 
 

@@ -42,10 +42,9 @@ export default function SnapchatCustomPage() {
       {/* Video Section */}
       <Card className="mb-8">
         <CardContent className="p-6">
-          <YouTubePlayer videoId="YOUR_VIDEO_ID" />
+          <YouTubePlayer videoId="xd9O7UdLKvA" />
         </CardContent>
       </Card>
-
 
       {/* Next Platform Navigation */}
       <div className="flex justify-end">

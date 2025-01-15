@@ -42,13 +42,11 @@ export default function TikTokCustomPage() {
       {/* Video Section */}
       <Card className="mb-8">
         <CardContent className="p-6">
-          <YouTubePlayer videoId="YOUR_VIDEO_ID" />
+          <YouTubePlayer videoId="0P5EcJCb9fg" />
         </CardContent>
       </Card>
 
-
       {/* Next Platform Navigation */}
-
         <div className="flex justify-between">
         <Link
           href="/reports/tasks/daily/process/prepare-additional/custom-metric/snapchat"
