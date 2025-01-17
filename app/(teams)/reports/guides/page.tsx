@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, FileText, BarChart2, Building2, LayoutDashboard, AlertCircle } from 'lucide-react';
+import {FileText, BarChart2, Building2, LayoutDashboard, AlertCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const guides = [
@@ -32,7 +32,8 @@ const guides = [
   }
 ];
 
-export const ReportsGuidesIntro = () => {
+// Changed from const ReportsGuidesIntro to export default function
+export default function GuidesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8" dir="rtl">
       {/* Header */}
@@ -81,5 +82,3 @@ export const ReportsGuidesIntro = () => {
     </div>
   );
 }
-
-export default ReportsGuidesIntro;
