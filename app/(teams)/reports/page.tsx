@@ -28,7 +28,7 @@ const mainOptions = [
   }
 ];
 
-export const ReportsSection = () => {
+export default function ReportsSectionPage () {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12" dir="rtl">
       {/* Header */}
@@ -81,5 +81,3 @@ export const ReportsSection = () => {
     </div>
   );
 };
-
-export default ReportsSection;
