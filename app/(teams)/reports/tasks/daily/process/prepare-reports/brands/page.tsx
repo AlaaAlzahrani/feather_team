@@ -19,27 +19,6 @@ const BrandsOverview = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      {/* Navigation Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-[#1D3D6F]/70 mb-6">
-        <Link href="/reports" className="hover:text-[#1D3D6F]">التقارير</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily" className="hover:text-[#1D3D6F]">اليومية</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process/prepare-reports" className="hover:text-[#1D3D6F]">تجهيز التقارير</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <span className="text-[#1D3D6F]">البراندات</span>
-      </div>
-
-      {/* Back Navigation */}
-      <Link
-        href="/reports/tasks/daily/process/prepare-reports"
-        className="flex items-center text-[#F28579] mb-6 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع لتجهيز التقارير
-      </Link>
 
       {/* Header */}
       <div className="mb-8">

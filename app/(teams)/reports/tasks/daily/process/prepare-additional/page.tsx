@@ -19,16 +19,6 @@ const AdditionalTutorialsOverview = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-4">
-      {/* Navigation Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-[#1D3D6F]/70 mb-6">
-        <Link href="/reports" className="hover:text-[#1D3D6F]">التقارير</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily" className="hover:text-[#1D3D6F]">اليومية</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <span className="text-[#1D3D6F]">شروحات إضافية</span>
-      </div>
 
       {/* Header */}
       <div className="mb-10 py-8">
@@ -65,17 +55,6 @@ const AdditionalTutorialsOverview = () => {
           </Link>
         ))}
       </div>
-
-
-        {/* Back Navigation */}
-        <Link
-        href="/reports/tasks/daily/process/prepare-reports"
-        className="flex items-center text-[#F28579] py-8 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للتقارير اليومية
-      </Link>
-
     </div>
   );
 };

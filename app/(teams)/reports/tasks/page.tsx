@@ -31,7 +31,7 @@ export default function TasksMainPage() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">إعداد التقارير</h1>
+        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">مهام التقارير</h1>
         <p className="text-[#1D3D6F]/70 text-lg">
           اختر نوع التقرير اللي تبي تتعلم عنه. نقترح تبدأ بالتقارير اليومية! 👋
         </p>
@@ -72,14 +72,6 @@ export default function TasksMainPage() {
           );
         })}
       </div>
-
-      {/* Navigation */}
-      <Link
-        href="/reports"
-        className="flex items-center text-[#F28579] py-8 hover:text-[#1D3D6F] transition-colors">
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للتقارير
-      </Link>
     </div>
   );
 }

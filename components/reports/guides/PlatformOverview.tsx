@@ -53,14 +53,6 @@ const platforms = [
 export const PlatformOverview = () => {
   return (
     <div className="max-w-4xl mx-auto p-4">
-      {/* Navigation */}
-      <Link
-        href="/reports/daily"
-        className="flex items-center text-[#F28579] hover:text-[#1D3D6F] transition-colors mb-6"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للتقارير اليومية
-      </Link>
 
       {/* Introduction */}
       <div className="mb-8">

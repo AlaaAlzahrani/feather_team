@@ -8,7 +8,7 @@ const MetricsGuide = () => {
       icon: DollarSign,
       nameEn: "Cost",
       nameAr: "التكلفة",
-      description: "Total amount spent on advertising",
+      description: "المبلغ اللي صرفته على الإعلان",
       platforms: {
         snapchat: "Amount Spent",
         tiktok: "Cost",
@@ -16,13 +16,13 @@ const MetricsGuide = () => {
         google: "Cost",
         x: "Spend"
       },
-      example: "مثال: إذا صرفت 1000 ريال على إعلان، هذا هو التكلفة 💰"
+      example: "يعني: لو صرفت ١٠٠٠ ريال على الإعلان، هذا يعتبر تكلفة الإعلان 💰"
     },
     {
       icon: MousePointerClick,
       nameEn: "Clicks",
-      nameAr: "عدد الضغطات",
-      description: "Number of times users clicked on your ad",
+      nameAr: "عدد النقرات",
+      description: "كم مرة الناس ضغطوا على إعلانك",
       platforms: {
         snapchat: "Clicks",
         tiktok: "Clicks (all)",
@@ -30,13 +30,13 @@ const MetricsGuide = () => {
         google: "Clicks",
         x: "Clicks"
       },
-      example: "مثال: لما يضغط شخص على إعلانك للتصفح، هذي تعتبر ضغطة 🖱️"
+      example: "يعني: كل ما شخص يضغط على إعلانك للتصفح، نعتبرها نقرة واحدة"
     },
     {
       icon: Eye,
       nameEn: "Impressions",
-      nameAr: "عدد الظهور",
-      description: "Number of times your ad was shown",
+      nameAr: "عدد المشاهدات",
+      description: "كم مرة ظهر إعلانك للناس",
       platforms: {
         snapchat: "Paid Impressions",
         tiktok: "Impressions",
@@ -44,13 +44,13 @@ const MetricsGuide = () => {
         google: "Impressions",
         x: "Impressions"
       },
-      example: "مثال: إذا شاف ١٠٠ شخص إعلانك، هذا يعني ١٠٠ ظهور 👀"
+      example: "يعني: لو ظهر إعلانك ١٠٠ مرة، هذا يعني عندك ١٠٠ مشاهدة 👀"
     },
     {
       icon: Users,
       nameEn: "Reach",
-      nameAr: "الوصول",
-      description: "Unique number of people who saw your ad",
+      nameAr: "عدد الأشخاص",
+      description: "عدد الأشخاص المختلفين اللي شافوا إعلانك",
       platforms: {
         snapchat: "Paid Reach",
         tiktok: "Reach",
@@ -58,13 +58,13 @@ const MetricsGuide = () => {
         google: "Unique Users",
         x: "Reach"
       },
-      example: "مثال: لو شاف نفس الشخص إعلانك ٣ مرات، يحسب كشخص واحد في الوصول 🎯"
+      example: "يعني: لو نفس الشخص شاف إعلانك ٣ مرات، نحسبه كشخص واحد بس"
     },
     {
       icon: ShoppingCart,
       nameEn: "Transactions",
-      nameAr: "عدد الطلبات",
-      description: "Number of completed purchases",
+      nameAr: "عدد المبيعات",
+      description: "عدد الطلبات المكتملة من إعلانك",
       platforms: {
         snapchat: "Purchases Total",
         tiktok: "Payments completed",
@@ -72,33 +72,35 @@ const MetricsGuide = () => {
         google: "Conversions",
         x: "Leads"
       },
-      example: "مثال: كل طلب يتم إكماله من خلال الإعلان يحسب كعملية شراء 🛍️"
+      example: "يعني: كل طلب تم شراؤه من خلال إعلانك يحسب كعملية بيع واحدة"
     },
     {
       icon: ShoppingCart,
       nameEn: "Revenue",
-      nameAr: "العائد المادي",
-      description: "Total monetary value generated from sales",
+      nameAr: "مبلغ المبيعات ",
+      description: "إجمالي مبيعات الإعلان",
       platforms: {
         snapchat: "Purchases Value Total",
         tiktok: "Payment completion value",
         meta: "Purchases conversion value",
         google: "Conv. Value",
-        x: "Not Avabilable"
+        x: "Not Available"
       },
-      example: "مثال: لو باع الإعلان منتجات بقيمة 5000 ريال، هذا هو العائد المادي 💰"
+      example: "يعني: لو باع إعلانك المنتج بـ ٥٠٠٠ ريال، هذا هو إجمالي مبيعات الإعلان"
     }
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="max-w-4xl mx-auto p-6" dir="rtl">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-4">دليل المقاييس | Metrics Guide</h1>
+        <h1 className="text-2xl font-bold text-[#1D3D6F] mb-4">دليل مقاييس الإعلانات</h1>
         <p className="text-[#1D3D6F]/70 text-lg">
-        يا هلا والله! 👋 تبي تعرف ايش معنى المصطلحات اللي تشوفها في التقارير؟ لا تشيل هم! هنا نشرحها لك باختصار.   </p>
-        <div className="bg-[#A8E5E2]/20 p-4 rounded-lg">
+          يا هلا! هنا راح نتعرف على المقاييس (Metrics) المهمة في تقارير الإعلانات 👋
+        </p>
+        <div className="bg-[#A8E5E2]/20 p-4 rounded-lg mt-4">
           <p className="text-[#1D3D6F] font-medium">
-             أحيانا كل منصة تسمي المقياس باسم مختلف، هنا بتلاقي مسميات المقاييس الي تهمنا في خمس منصات نحب نستخدمها (سنابشات، تيكتوك، انستقرام، قوقل وإكس)  </p>
+            كل منصة من المنصات الخمس (سناب شات، تيك توك، انستاقرام، قوقل، إكس) تستخدم أسماء مختلفة... بس معناها واحد! راح نشرح لك كل شي بالتفصيل
+          </p>
         </div>
       </div>
 
@@ -106,7 +108,7 @@ const MetricsGuide = () => {
         {metrics.map((metric, index) => {
           const Icon = metric.icon;
           return (
-            <Card key={index} className="border-l-4 border-l-[#A8E5E2] hover:shadow-lg transition-all">
+            <Card key={index} className="border-right-4 border-r-[#A8E5E2] hover:shadow-lg transition-all">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-[#DFF7F6] p-3 rounded-full">
@@ -114,20 +116,23 @@ const MetricsGuide = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <h3 className="text-xl font-semibold text-[#1D3D6F]">{metric.nameEn}</h3>
-                      <span className="text-[#1D3D6F]/70">|</span>
-                      <h3 className="text-xl font-semibold text-[#1D3D6F]">{metric.nameAr}</h3>
+                      <h3 className="text-xl font-bold text-[#1D3D6F]">{metric.nameAr}</h3>
+                      <span className="text-sm text-[#1D3D6F]/70">({metric.nameEn})</span>
                     </div>
                     
-                    <p className="text-[#1D3D6F]/70 mb-4">{metric.example}</p>
+                    <p className="text-[#1D3D6F]/70 mb-4 text-lg">{metric.description}</p>
                     
-                    <div className="bg-[#DFF7F6] rounded-lg p-4">
-                      <h4 className="text-sm font-semibold text-[#1D3D6F] mb-3">Platform Names:</h4>
+                    <div className="bg-[#DFF7F6] rounded-lg p-4 mb-4">
+                      <p className="text-[#1D3D6F]/80">{metric.example}</p>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg p-4 border border-[#A8E5E2]">
+                      <h4 className="text-sm font-bold text-[#1D3D6F] mb-3">اسمه في كل منصة:</h4>
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                         {Object.entries(metric.platforms).map(([platform, term]) => (
-                          <div key={platform} className="bg-white rounded-lg p-2">
-                            <p className="text-sm font-medium text-[#1D3D6F] capitalize">{platform}:</p>
-                            <p className="text-sm text-[#1D3D6F]/70">{term}</p>
+                          <div key={platform} className="bg-[#DFF7F6] rounded-lg p-2">
+                            <p className="text-sm font-medium text-[#1D3D6F] capitalize">{platform}</p>
+                            <p className="text-sm text-[#1D3D6F]/70 mt-1">{term}</p>
                           </div>
                         ))}
                       </div>
@@ -141,10 +146,14 @@ const MetricsGuide = () => {
       </div>
 
       <div className="mt-8 p-4 bg-[#DFF7F6] rounded-lg">
-        <p className="text-[#1D3D6F] text-sm">
-        نصيحة: دايم راجع التوثيق الرسمي للمنصات عشان تشوف آخر التحديثات 💡
-        </p>
+        <div className="text-[#1D3D6F]">
+          <h4 className="font-bold mb-2 text-lg">تنبيه مهم عن العملات! 💰</h4>
+          <p className="text-[#1D3D6F]/80 leading-relaxed">
+            أحيانا المنصة تعرض مبلغ المبيعات بعملة غير الريال السعودي (دولار أمريكي أو درهم إماراتي). لازم ننتبه للعملة المستخدمة في المنصة ونتأكد من تحويلها للريال السعودي في التقرير.
+          </p>
+        </div>
       </div>
+
     </div>
   );
 };

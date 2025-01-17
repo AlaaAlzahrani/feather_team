@@ -67,12 +67,12 @@ export const BrandList = () => {
           <thead className="bg-[#DFF7F6]">
             <tr>
               <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">#</th>
-              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">Brand</th>
-              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">Snapchat</th>
-              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">TikTok</th>
-              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">Meta</th>
-              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">Google</th>
-              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">Account</th>
+              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">البراند</th>
+              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">سناب شات</th>
+              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">تيك توك</th>
+              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">ميتا</th>
+              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">قوقل</th>
+              <th className="px-4 py-3 text-right text-sm font-semibold text-[#1D3D6F]">إيميل قوقل آدز</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
@@ -82,7 +82,6 @@ export const BrandList = () => {
                 <td className="px-4 py-3 text-right">
                   <div className="flex items-center justify-end gap-2">
                     <span className="font-medium text-[#1D3D6F]">{brand.name}</span>
-                    <Building2 className="w-4 h-4 text-[#1D3D6F]" />
                   </div>
                 </td>
                 <td className="px-4 py-3 text-right text-sm text-[#1D3D6F]">{brand.platforms.snapchat}</td>

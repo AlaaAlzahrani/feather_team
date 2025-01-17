@@ -7,21 +7,13 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export default function AdStructureGuide() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      {/* Navigation */}
-      <Link
-        href="/reports/guides"
-        className="flex items-center text-[#F28579] mb-6 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowRight className="w-4 h-4 ml-2" />
-        رجوع للدليل
-      </Link>
+    <div className="max-w-4xl mx-auto px-4 py-8" dir="rtl">
 
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-[#1D3D6F] mb-3">هيكلة الإعلانات </h1>
         <div className="text-[#1D3D6F]/70">
-          <p>أهلين! 👋 هنا بنقدم لك شرح مختصر عن هيكلة (ترتيب) الحملات الإلكترونية. بس ليش مهم نعرفها؟ لأن في أوقات بنحتاج نعرف أداء الحملة كاملة، وأحياناً نبي نشوف أداء جزء معين من الحملة 💡</p>
+          <p>يا هلا فيك!  تخيل معي الإعلانات مثل شجرة عائلة صغيرة - كل شي فيها مرتب ومنظم! اليوم بنتعرف على تنظيم الإعلانات عشان نقدر نفهم أداء إعلاناتنا بشكل أفضل ونسوي قرارات ذكية! 💫</p>
         </div>
       </div>
 
@@ -32,7 +24,7 @@ export default function AdStructureGuide() {
             {/* Campaign Level */}
             <div className="w-64 p-4 bg-[#1D3D6F] text-white rounded-lg text-center">
               <Layout className="w-6 h-6 mx-auto mb-2" />
-              Campaign 
+              الحملة الإعلانية
             </div>
             
             <div className="h-8 w-px bg-[#1D3D6F]" />
@@ -42,17 +34,17 @@ export default function AdStructureGuide() {
               <div className="flex flex-col items-center">
                 <div className="w-48 p-3 bg-[#A8E5E2] text-[#1D3D6F] rounded-lg text-center mb-4">
                   <Layers className="w-5 h-5 mx-auto mb-2" />
-                  Ad Set 1 
+                  مجموعة إعلانية ١
                 </div>
                 <div className="h-8 w-px bg-[#1D3D6F] mb-4" />
                 <div className="flex gap-2">
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 1 
+                    إعلان ١
                   </div>
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 2 
+                    إعلان ٢
                   </div>
                 </div>
               </div>
@@ -60,17 +52,17 @@ export default function AdStructureGuide() {
               <div className="flex flex-col items-center">
                 <div className="w-48 p-3 bg-[#A8E5E2] text-[#1D3D6F] rounded-lg text-center mb-4">
                   <Layers className="w-5 h-5 mx-auto mb-2" />
-                  Ad Set 2 
+                  مجموعة إعلانية ٢
                 </div>
                 <div className="h-8 w-px bg-[#1D3D6F] mb-4" />
                 <div className="flex gap-2">
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 3 
+                    إعلان ٣
                   </div>
                   <div className="w-20 p-2 bg-[#F28579] text-white rounded-lg text-center text-xs">
                     <Image className="w-4 h-4 mx-auto mb-1" />
-                    Ad 4 
+                    إعلان ٤
                   </div>
                 </div>
               </div>
@@ -90,15 +82,15 @@ export default function AdStructureGuide() {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-[#1D3D6F] mb-2">
-                  الحملة
+                  الحملة الإعلانية
                   <span className="text-lg font-normal text-[#1D3D6F]/70 mr-2">(Campaign)</span>
                 </h2>
                 <p className="text-[#1D3D6F]/70 mb-4">
-                  هي المستوى الأعلى اللي يجمع كل الإعلانات المترابطة مع بعض
+                  هي زي المظلة الكبيرة اللي تجمع كل الإعلانات المتشابهة تحتها 🌂
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: "تخفيضات الشتاء2024" - حملة تجمع كل إعلانات عروض الشتاء
+                    مثال: "تخفيضات الشتاء ٢٠٢٤" - هي مظلة تجمع كل إعلانات عروض الشتاء! ❄️
                   </p>
                 </div>
               </div>
@@ -119,11 +111,11 @@ export default function AdStructureGuide() {
                   <span className="text-lg font-normal text-[#1D3D6F]/70 mr-2">(Ad Set)</span>
                 </h2>
                 <p className="text-[#1D3D6F]/70 mb-4">
-                  مجموعات الإعلانات اللي تستهدف شريحة معينة أو هدف محدد
+                  زي العلبة اللي نحط فيها الإعلانات المتشابهة - مثلاً كل الإعلانات اللي تستهدف نفس المنطقة أو نفس الفئة العمرية 📦
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: "منطقة الإمارات" - مجموعة إعلانات مخصصة لعملاء الإمارات
+                    مثال: "إعلانات منطقة الرياض" - كل الإعلانات اللي تستهدف سكان الرياض 🌆
                   </p>
                 </div>
               </div>
@@ -144,11 +136,11 @@ export default function AdStructureGuide() {
                   <span className="text-lg font-normal text-[#1D3D6F]/70 mr-2">(Ad)</span>
                 </h2>
                 <p className="text-[#1D3D6F]/70 mb-4">
-                  الإعلان نفسه بتصميمه ورسالته الخاصة
+                  هذا الإعلان نفسه! مثل الحلاوة في العلبة - لها شكلها الخاص ولونها المميز 🍬
                 </p>
                 <div className="bg-[#DFF7F6] p-3 rounded-lg">
                   <p className="text-[#1D3D6F]/80 text-sm">
-                    مثال: "ستوري تخفيضات الشتاء 1" - إعلان ستوري محدد بتصميمه الخاص
+                    مثال: "ستوري تخفيضات الشتاء ١" - إعلان ستوري يعرض العروض بتصميم خاص 🎨
                   </p>
                 </div>
               </div>
@@ -163,10 +155,10 @@ export default function AdStructureGuide() {
           <div className="flex items-start gap-3">
             <Info className="w-5 h-5 text-[#1D3D6F] mt-1" />
             <div>
-              <h4 className="font-semibold text-[#1D3D6F] mb-1">نصائح سريعة:</h4>
+              <h4 className="font-semibold text-[#1D3D6F] mb-1">نصائح 🌟</h4>
               <ul className="text-sm text-[#1D3D6F]/70 space-y-2">
-                <li>• تقدر تشوف الأداء على مستوى الحملة، المجموعة، أو الإعلان</li>
-                <li>• ابدأ بمراجعة أداء الحملة كاملة، وبعدين ادخل في تفاصيل المجموعات والإعلانات</li>
+                <li>• تقدر تشوف أداء الإعلانات  - سواء أداء الحملة كاملة أو مجموعة معينة أو حتى إعلان واحد </li>
+                <li>• نصيحة: ابدأ بالنظرة العامة للحملة، وبعدين غوص في التفاصيل! عشان تفهم الصورة كاملة </li>
               </ul>
             </div>
           </div>
@@ -175,4 +167,3 @@ export default function AdStructureGuide() {
     </div>
   );
 }
-

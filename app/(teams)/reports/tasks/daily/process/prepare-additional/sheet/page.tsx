@@ -8,19 +8,6 @@ import YouTubePlayer from '@/components/reports/YouTubePlayer';
 export default function SheetPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      {/* Navigation Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-[#1D3D6F]/70 mb-6">
-        <Link href="/reports" className="hover:text-[#1D3D6F]">التقارير</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily" className="hover:text-[#1D3D6F]">اليومية</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process" className="hover:text-[#1D3D6F]">شروحات</Link>
-        <ChevronLeft className="w-4 h-4" />
-        <Link href="/reports/tasks/daily/process/prepare-additional" className="hover:text-[#1D3D6F]">شروحات إضافة </Link>
-        <ChevronLeft className="w-4 h-4" />
-        <span className="text-[#1D3D6F]">تنسيق التقرير</span>
-      </div>
-
 
       {/* Header */}
       <div className="mb-8">

@@ -6,14 +6,6 @@ import Link from 'next/link';
 const DailySchedulePage = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      {/* Navigation */}
-      <Link
-        href="/reports/tasks/daily"
-        className="flex items-center text-[#F28579] mb-6 hover:text-[#1D3D6F] transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        رجوع للتقارير اليومية
-      </Link>
 
       {/* Header */}
       <div className="mb-8">
