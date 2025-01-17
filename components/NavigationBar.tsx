@@ -127,16 +127,6 @@ const NavigationBar = () => {
               </React.Fragment>
             ))}
           </div>
-
-          {/* Help Button */}
-          <button 
-            className="flex items-center gap-2 text-[#1D3D6F]/70 hover:text-[#1D3D6F] transition-colors"
-            onClick={() => console.log('Help clicked')}
-            aria-label="فتح مركز المساعدة"
-          >
-            <span className="text-sm">تحتاج مساعدة؟</span>
-            <HelpCircle className="w-5 h-5" />
-          </button>
         </div>
       </div>
     </nav>
