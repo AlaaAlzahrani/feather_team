@@ -1,62 +1,38 @@
-"use client";
-
 import React from 'react';
-import { ArrowLeft, Users } from 'lucide-react';
-import { teams, teamData } from '@/data/teams';
-import Link from 'next/link';
+import { Clock } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
-export default function PhotographyPage() {
-  const team = teams.find(t => t.id === 'photography')!;
-  const { resources, memberCount } = teamData['photography'];
-
+export default function ComingSoonPage () {
   return (
-    <div className="min-h-screen bg-white font-[Raleway]">
-      {/* Header - Kept compact */}
-      <header className="bg-gray-900 text-white">
-        <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="hover:text-blue-400 transition-colors">
-              <ArrowLeft className="w-5 h-5" />
-            </Link>
-            <h1 className="text-xl font-bold">FEATHER | {team.name} Team</h1>
-          </div>
-          <div className="flex items-center gap-2">
-            <Users className="w-4 h-4" />
-            <span className="text-sm">{memberCount} team members</span>
-          </div>
-        </nav>
-      </header>
+    <div className="min-h-screen bg-white py-16 px-4">
+      <div className="max-w-2xl mx-auto text-center">
+        
+        <Card className="mb-8">
+          <CardContent className="p-8">
+            {/* Icon */}
+            <div className="w-20 h-20 rounded-full bg-[#DFF7F6] flex items-center justify-center mx-auto mb-6">
+              <Clock className="w-10 h-10 text-[#1D3D6F]" />
+            </div>
 
-      <main className="max-w-6xl mx-auto px-6">
-        {/* Welcome Section - Added more vertical space */}
-        <div className="pt-24 pb-20">
-          <h2 className="text-3xl font-bold mb-3">{team.name} Team Resources</h2>
-          <p className="text-gray-600 text-lg max-w-2xl">
-            {team.description}
-          </p>
-        </div>
+            {/* Title */}
+            <h1 className="text-2xl font-bold text-[#1D3D6F] mb-4">
+              سيتم إضافة محتوى هذه الصفحة قريباً
+            </h1>
 
-        {/* Resources Grid - Improved spacing and hover states */}
-        <section className="pb-24">
-          <h3 className="text-xl font-bold mb-8">Essential Resources</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {resources.map((resource) => {
-              const IconComponent = resource.icon;
-              return (
-                <div 
-                  key={resource.title} 
-                  className="p-6 bg-white border rounded-lg hover:border-blue-600 hover:shadow-md transition-all cursor-pointer group"
-                >
-                  <IconComponent className="w-6 h-6 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                  <h4 className="text-lg font-semibold mb-2">{resource.title}</h4>
-                  <p className="text-gray-600 text-sm mb-3">{resource.description}</p>
-                  <span className="text-sm text-blue-600">{resource.count}</span>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-      </main>
+            {/* Description */}
+            <p className="text-[#1D3D6F]/70 text-lg mb-6">
+              نعمل حالياً على إعداد محتوى مميز لك. تابعنا للحصول على التحديثات ✨
+            </p>
+
+            {/* Visual Indicator */}
+            <div className="flex justify-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#F28579] animate-bounce" style={{ animationDelay: '0s' }} />
+              <div className="w-2 h-2 rounded-full bg-[#F28579] animate-bounce" style={{ animationDelay: '0.2s' }} />
+              <div className="w-2 h-2 rounded-full bg-[#F28579] animate-bounce" style={{ animationDelay: '0.4s' }} />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
-}
+};
